@@ -1,0 +1,9 @@
+/* public/style.css */
+body { font-family: Arial, Helvetica, sans-serif; background: #f5f7fa; margin: 0; padding: 30px; }
+.container { max-width: 900px; margin: auto; }
+h1 { margin-bottom: 10px; }
+.card { background: #fff; padding: 16px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); margin-bottom: 16px; }
+input { display: block; width: 100%; padding: 8px; margin: 8px 0; box-sizing: border-box; }
+button { padding: 8px 12px; }
+pre { background: #111; color: #0f0; padding: 10px; border-radius: 6px; height: 80px; overflow: auto; }
+.notes { font-size: 0.9rem; color: #333; margin-top: 10px; }

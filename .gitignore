@@ -1,0 +1,23 @@
+# Node stuff
+node_modules/
+npm-debug.log
+
+# env / secrets
+.env
+.env.local
+.env.*.local
+
+# database (optional: include if allowed, otherwise keep out)
+# Uncomment to keep DB out of repo:
+# users.db
+# *.db
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# compressed archives or huge files you don't want to upload
+*.zip
+*.tar.gz

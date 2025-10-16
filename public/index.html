@@ -1,0 +1,44 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>SQL Injection Lab</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>SQL Injection Lab — Node.js + SQLite</h1>
+
+    <p>Try the same credentials against the <strong>VULNERABLE</strong> and <strong>SECURE</strong> endpoints to observe the difference.</p>
+
+    <div class="card">
+      <h2>Vulnerable Login (POST /vuln-login)</h2>
+      <form id="vulnForm">
+        <input id="vuln-username" placeholder="Username" required />
+        <input id="vuln-password" placeholder="Password" required />
+        <button type="submit">Vulnerable Login</button>
+      </form>
+      <pre id="vulnResult"></pre>
+    </div>
+
+    <div class="card">
+      <h2>Secure Login (POST /login)</h2>
+      <form id="secureForm">
+        <input id="sec-username" placeholder="Username" required />
+        <input id="sec-password" placeholder="Password" required />
+        <button type="submit">Secure Login</button>
+      </form>
+      <pre id="secureResult"></pre>
+    </div>
+
+    <div class="notes">
+      <p><b>Sample accounts:</b> admin/admin123, alice/alicepass, bob/bobpass</p>
+      <p><b>Try attack payloads:</b> <code>' OR '1'='1</code> as password, or <code>admin' --</code></p>
+      <p>Open your server console to see the exact SQL strings constructed by the vulnerable endpoint.</p>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
